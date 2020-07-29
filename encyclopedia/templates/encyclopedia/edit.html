@@ -1,0 +1,35 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block body %}
+
+    <div class="">
+        <h1>Edit {{title}}</h1>
+        <hr>
+        <form action="{% url 'edit' %}" method="post">
+            {% csrf_token %}
+            <div class="inputField">
+                <p>
+                    Edit {{ form.title.label}}
+                </p>
+                    {{ form.title}}
+            </div>
+            <br>
+            <div class="inputField" style="width:1200px;">
+                <p>
+                    Edit {{ form.Contents.label}}
+                </p>
+                    {{ form.Contents }}
+            </div>
+            <div class="inputField" >
+                <button type="submit" value="Save" class="btn btn-success">
+                    Save Changes
+                </button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

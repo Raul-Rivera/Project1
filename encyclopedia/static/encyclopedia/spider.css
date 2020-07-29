@@ -1,0 +1,31 @@
+h1 {
+    color: #bf9817;
+    font-weight: bold;
+    font-style: italic;
+}
+
+hr {
+    border: 2px solid #fac105 ;
+}
+
+h3 {
+    color: #a31420;
+    font-style: italic;
+}
+
+h5 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    color: #945916;
+    font-size: 30px;
+    font-style: italic;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 25px;
+}
